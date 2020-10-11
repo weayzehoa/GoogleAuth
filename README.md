@@ -29,3 +29,4 @@
     a. 修改 app/SocialGoogleAccount.php
     b. 修改 database/migrations/2020_10_11_030936_create_social_google_accounts_table.php
     c. 修改完成後執行 php artisan migrate:refresh
+9. 新增 app/Services 目錄及 SocialGoogleAccountService.php 並修改它
