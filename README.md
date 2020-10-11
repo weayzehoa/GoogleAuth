@@ -21,3 +21,6 @@
     GOOGLE_REDIRECT=https://localhost/callback
 6. 建立 SocialAuthGoogleController 控制器
     php artisan make:controller SocialAuthGoogleController
+7. 修改 route/web.php 新增
+    Route::get('/redirect', 'SocialAuthGoogleController@redirect');
+    Route::get('/callback', 'SocialAuthGoogleController@callback');
