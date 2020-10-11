@@ -24,3 +24,8 @@
 7. 修改 route/web.php 新增
     Route::get('/redirect', 'SocialAuthGoogleController@redirect');
     Route::get('/callback', 'SocialAuthGoogleController@callback');
+8. 建立 Model 及 修改相關檔案
+    php artisan make:model SocialGoogleAccount -m
+    a. 修改 app/SocialGoogleAccount.php
+    b. 修改 database/migrations/2020_10_11_030936_create_social_google_accounts_table.php
+    c. 修改完成後執行 php artisan migrate:refresh
