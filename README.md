@@ -15,3 +15,9 @@
         'client_secret' => env('GOOGLE_CLIENT_SECRET'),
         'redirect' => env('GOOGLE_REDIRECT'),
     ],
+5. 取得 Google OAhth 資料並增加到 .env 設定中
+    GOOGLE_CLIENT_ID=XXXXXXXXXXXXXXXXXXXXXXXXXXX
+    GOOGLE_CLIENT_SECRET=XXXXXXXXXXXXXXXXXXXXXXX
+    GOOGLE_REDIRECT=https://localhost/callback
+6. 建立 SocialAuthGoogleController 控制器
+    php artisan make:controller SocialAuthGoogleController
