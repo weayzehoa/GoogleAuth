@@ -31,3 +31,4 @@
     c. 修改完成後執行 php artisan migrate:refresh
 9. 新增 app/Services 目錄及 SocialGoogleAccountService.php 並修改它
 10. 修改 login 視圖，新增一個按鈕
+11. 測試，完成。
