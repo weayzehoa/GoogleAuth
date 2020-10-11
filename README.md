@@ -9,3 +9,9 @@
         Laravel\Socialite\SocialiteServiceProvider::class,
     b. aliases區段加入
         'Socialite' => Laravel\Socialite\Facades\Socialite::class,
+4. 修改 config/services.php，加入 Google
+    'google' => [
+        'client_id' => env('GOOGLE_CLIENT_ID'),
+        'client_secret' => env('GOOGLE_CLIENT_SECRET'),
+        'redirect' => env('GOOGLE_REDIRECT'),
+    ],
